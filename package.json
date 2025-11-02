@@ -1,0 +1,60 @@
+{
+  "name": "autopjtree",
+  "displayName": "%autopjtree.displayName%",
+  "description": "%autopjtree.description%",
+  "version": "0.0.1",
+  "publisher": "EL233",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:autopjtree.generate"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "autopjtree.generate",
+        "title": "%autopjtree.commandTitle%"
+      }
+    ],
+    "configuration": {
+      "title": "%autopjtree.configTitle%",
+      "properties": {
+        "autotree.ignore": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["node_modules", ".git"],
+          "description": "%autopjtree.config.ignore%"
+        },
+        "autotree.maxDepth": {
+          "type": "number",
+          "default": 0,
+          "description": "%autopjtree.config.maxDepth%"
+        },
+        "autotree.outputFile": {
+          "type": "string",
+          "default": "PROJECT_TREE.md",
+          "description": "%autopjtree.config.outputFile%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "license": "MIT"
+}
