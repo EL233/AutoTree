@@ -1,11 +1,48 @@
+# 编辑器与测试相关
 .vscode/**
 .vscode-test/**
+.vscodeignore
+.vsc-extension-quickstart.md
+
+# 源码与配置文件
 src/**
-.gitignore
-.yarnrc
-vsc-extension-quickstart.md
+**/*.ts
+**/*.map
 **/tsconfig.json
 **/eslint.config.mjs
-**/*.map
-**/*.ts
-**/.vscode-test.*
+.eslintrc.js
+.eslintrc.cjs
+.eslintrc.json
+*.yml
+*.yaml
+
+# 项目根配置
+.gitignore
+.git/**
+.yarnrc
+*.log
+*.md~
+package-lock.json
+yarn.lock
+
+# 非必要资源
+example/**
+docs/**
+screenshots/**
+tests/**
+__tests__/**
+
+# 📦 构建产物保留
+!out/**
+!dist/**
+!img/icon.png
+!img/userignore.png
+!img/userremind.png
+!img/usersetting.png
+
+# ✅ 保留的文档与许可
+!README.md
+!README_CN.md
+!CHANGELOG.md
+!LICENSE
+!package.json

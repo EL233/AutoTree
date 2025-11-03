@@ -1,15 +1,15 @@
 {
-  "displayName": "AutoPJTree 项目树生成器",
-  "description": "自动生成项目结构树并输出为 Markdown 文件。",
-  "command.title": "AutoPJTree: 生成项目树",
-  "config.title": "AutoPJTree 设置",
-  "config.ignore": "生成项目树时要忽略的文件或文件夹列表。",
-  "config.maxDepth": "目录递归深度,0 表示无限制。",
-  "config.outputFile": "生成的项目树 Markdown 文件名称。",
-  "multipleConfigDetected": "检测到多处配置",
-  "configConflictPrompt": "在多个位置发现不同的设置,请选择使用哪个配置:",
-  "workspaceConfig": "工作区设置",
-  "userConfig": "用户(全局)设置",
-  "projectConfig": "项目设置(.vscode/settings.json)",
-  "configPriority": "配置优先级:项目设置 > 工作区设置 > 用户设置"
+  "autopjtree.displayName": "自动项目结构生成器",
+  "autopjtree.description": "自动生成项目结构树并保存为 Markdown 文件。",
+  "autopjtree.commandTitle": "AutoPJTree：生成项目结构树",
+  "autopjtree.configTitle": "AutoPJTree 设置",
+  "autopjtree.config.ignore": "生成项目结构时要忽略的文件或文件夹。",
+  "autopjtree.config.maxDepth": "目录扫描的最大递归深度。0 表示无限。",
+  "autopjtree.config.outputFile": "输出项目结构树的 Markdown 文件名。",
+  "autopjtree.multipleConfigDetected": "检测到多个配置来源",
+  "autopjtree.configConflictPrompt": "在多个位置发现不同设置，请选择要使用的配置来源：",
+  "autopjtree.workspaceConfig": "工作区设置",
+  "autopjtree.userConfig": "用户（全局）设置",
+  "autopjtree.projectConfig": "项目 (.vscode/settings.json)",
+  "autopjtree.configPriority": "配置优先级：项目 > 工作区 > 用户"
 }

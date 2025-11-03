@@ -2,18 +2,31 @@
   "name": "autopjtree",
   "displayName": "%autopjtree.displayName%",
   "description": "%autopjtree.description%",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "EL233",
   "repository": {
-     "type": "git",
-     "url": "https://github.com/EL233/autopjtree.git"
-   },
+    "type": "git",
+    "url": "https://github.com/EL233/autopjtree.git"
+  },
+  "icon": "img/icon.png",
   "engines": {
     "vscode": "^1.105.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:autopjtree.generate"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:autopjtree.generate"
+  ],
   "main": "./out/extension.js",
+  "files": [
+    "out/",
+    "img/",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "contributes": {
     "commands": [
       {
@@ -26,7 +39,9 @@
       "properties": {
         "autotree.ignore": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "default": ["node_modules", ".git"],
           "description": "%autopjtree.config.ignore%"
         },
@@ -44,21 +59,23 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "npm run bundle",
     "compile": "tsc -p ./",
+    "bundle": "esbuild ./out/extension.js --bundle --minify --platform=node --external:vscode --outfile=./dist/extension.js",
     "watch": "tsc -w -p ./",
     "lint": "eslint src",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.105.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
+    "@types/vscode": "^1.105.0",
     "@typescript-eslint/eslint-plugin": "^8.45.0",
     "@typescript-eslint/parser": "^8.45.0",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.24.2",
     "eslint": "^9.36.0",
-    "typescript": "^5.9.3",
-    "@vscode/test-electron": "^2.5.2"
+    "typescript": "^5.9.3"
   },
   "license": "MIT"
 }

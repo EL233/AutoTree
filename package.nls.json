@@ -1,15 +1,15 @@
 {
-  "displayName": "AutoPJTree",
-  "description": "Generate your project structure tree as a Markdown file automatically.",
-  "command.title": "AutoPJTree: Generate Project Tree",
-  "config.title": "AutoPJTree Settings",
-  "config.ignore": "List of folders or files to ignore when generating the project tree.",
-  "config.maxDepth": "Maximum recursion depth for directory scanning. 0 means unlimited.",
-  "config.outputFile": "Output Markdown file name for the generated project tree.",
-  "multipleConfigDetected": "Multiple configuration sources detected",
-  "configConflictPrompt": "Different settings found in multiple locations. Choose which to use:",
-  "workspaceConfig": "Workspace Settings",
-  "userConfig": "User (Global) Settings",
-  "projectConfig": "Project (.vscode/settings.json)",
-  "configPriority": "Configuration Priority: Project > Workspace > User"
+  "autopjtree.displayName": "AutoPJTree",
+  "autopjtree.description": "Generate your project structure tree as a Markdown file automatically.",
+  "autopjtree.commandTitle": "AutoPJTree: Generate Project Tree",
+  "autopjtree.configTitle": "AutoPJTree Settings",
+  "autopjtree.config.ignore": "List of folders or files to ignore when generating the project tree.",
+  "autopjtree.config.maxDepth": "Maximum recursion depth for directory scanning. 0 means unlimited.",
+  "autopjtree.config.outputFile": "Output Markdown file name for the generated project tree.",
+  "autopjtree.multipleConfigDetected": "Multiple configuration sources detected",
+  "autopjtree.configConflictPrompt": "Different settings found in multiple locations. Choose which to use:",
+  "autopjtree.workspaceConfig": "Workspace Settings",
+  "autopjtree.userConfig": "User (Global) Settings",
+  "autopjtree.projectConfig": "Project (.vscode/settings.json)",
+  "autopjtree.configPriority": "Configuration Priority: Project > Workspace > User"
 }

@@ -4,11 +4,13 @@
 
 # 🌲 AutoTree - Project Structure Generator  
 
-AutoTree —— 一个能自动生成项目结构文档的轻量级 VS Code 插件。
+[English Version](./README.md) | [中文版](./README_CN.md)
 
-[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-blue?logo=visualstudiocode)](https://code.visualstudio.com/)
+_AutoTree —— 一个能自动生成项目结构文档的轻量级 VS Code 插件。_
+
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/EL233.autopjtree?label=Marketplace&logo=visualstudiocode&color=blue)](https://marketplace.visualstudio.com/items?itemName=EL233.autopjtree)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/EL233.autopjtree?color=brightgreen)](https://marketplace.visualstudio.com/items?itemName=EL233.autopjtree)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange)
 
 </div>
 
